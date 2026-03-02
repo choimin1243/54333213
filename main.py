@@ -1,8 +1,5 @@
 import sys
 
-        erase_btn = QPushButton("Eraser")
-        erase_btn.clicked.connect(self.set_eraser_mode)
-
         clear_btn = QPushButton("Clear")
         clear_btn.clicked.connect(self.clear_canvas)
 
@@ -60,4 +57,3 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = TransparentDraw()
     window.show()
-    sys.exit(app.exec_())
